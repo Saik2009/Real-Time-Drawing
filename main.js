@@ -26,10 +26,7 @@ function modelLoaded(){
 function gotPoses(results){
     if(results.length>0){
         console.log(results);
-    }
-    else{
-        //nose
-        console.log(results);
+        
         nosex=results[0].pose.nose.x;
         nosey=results[0].pose.nose.y;
         console.log("NoseX= "+nosex+" NoseY= "+nosey);
@@ -39,4 +36,5 @@ function gotPoses(results){
         console.log("left_wrist= "+left_wrist+" right_wrist= "+right_wrist);
         difference=floor(left_wrist-right_wrist);
     }
+    
 }
